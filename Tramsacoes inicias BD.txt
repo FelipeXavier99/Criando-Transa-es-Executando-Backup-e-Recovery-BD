@@ -1,0 +1,34 @@
+--parte 1
+
+create TABLE testeCOD1(
+  id_teste int PRIMARY KEY not null,
+  nome varchar not null,
+  number int,
+  data date
+)
+INSERT into testeCOD1 (id_teste,nome,number,data) values (1,"teste",8,"2010-11-10") 
+
+UPDATE testeCOD1
+set number=6
+WHERE testeCOD1=1
+
+ALTER TABLE testeCOD1 add  tipo_teste varchar; 
+
+SELECT * from testeCOD1
+
+
+--parte 2
+
+delimiter\\
+CREATE procedure testeCOD1(
+ number,
+  )
+  BEGIN
+if(length(number)>11 and number>17) THEN
+  when "está autorizador"
+  --selet from user;
+ ELSE
+  when "Erro ao digitar";
+  else if;
+end;
+delimiter;
